@@ -3,6 +3,10 @@ import screen from 'superior-mq';
 
 const GlobalStyle = createGlobalStyle`
 
+  :root {
+    --container: 1220px;
+  }
+
   *,
   *::after,
   *::before {
