@@ -9,7 +9,12 @@ const gridItemStyles = `
 `;
 
 const IntroSection = styled.section`
-  padding-bottom: 200px;
+  padding-bottom: 168px;
+
+  p {
+    font-size: 1.125rem;
+    line-height: 32px;
+  }
 `;
 
 const Intro = (props) => (

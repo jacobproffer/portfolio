@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Container from './Container';
 import Grid from './Grid';
 import List from './List';
+import Link from './Link';
 
 const footerList = [
   {
@@ -17,8 +18,6 @@ const footerList = [
   }
 ];
 
-const isExternal = (url) => url.match(/^(https?:)?\/\/|mailto:/);
-
 const gridItemStyles = `
   grid-column: span 2 / -1;
   align-self: end;
@@ -29,6 +28,14 @@ const StyledFooter = styled.footer`
   padding-bottom: 50px;
 `;
 
+const ListItem = styled.li`
+  display: inline-block;
+  
+  &:not(:last-of-type) {
+    margin-right: 25px;
+  }
+`;
+
 const Footer = (props) => (
   <StyledFooter>
     <Container>
@@ -37,17 +44,17 @@ const Footer = (props) => (
           <nav>
             <List>
               {footerList.map(item => (
-                <li key={item.id}>
-                  <a href={item.link} target={isExternal(item.link) ? '_blank' : undefined}>
+                <ListItem key={item.id}>
+                  <Link link={item.link}>
                     {item.title}
-                  </a>
-                </li>
+                  </Link>
+                </ListItem>
               ))}
             </List>
           </nav>
         </Grid.Item>
         <Grid.Item styles={gridItemStyles}>
-          <a href="https://github.com">Repository</a>
+          <Link link="https://github.com">Repository</Link>
         </Grid.Item>
       </Grid>
     </Container>

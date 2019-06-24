@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Container from './Container';
 import Grid from './Grid';
 import List from './List';
+import Link from './Link';
 
 const gridItemStyles = `
   grid-column: span 2 / -1;
@@ -14,11 +15,7 @@ const SiteHeader = styled.header`
   position: absolute;
   z-index: 1;
   width: 100%;
-  padding: 50px 0;
-`;
-
-const NavLink = styled.a`
-  font-size: 1.5rem;
+  padding: 100px 0;
 `;
 
 const Header = (props) => (
@@ -31,7 +28,7 @@ const Header = (props) => (
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">
             <List>
-              <NavLink href="https://jacobproffer.com">履歴書</NavLink>
+              <Link link="https://jacobproffer.com">履歴書</Link>
             </List>
           </nav>
         </Grid.Item>

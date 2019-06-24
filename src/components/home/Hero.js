@@ -5,7 +5,7 @@ import Container from '../Container';
 import Grid from '../Grid';
 
 const HeroBlock = styled.div`
-  padding: 50px 0 200px;
+  padding: 100px 0 182px;
 `;
 
 const Image = styled(Grid.Item)`
@@ -40,7 +40,7 @@ const Figure = styled.figure`
 const Heading = styled.h2`
   position: absolute;
   top: 50%;
-  right: -56px;
+  right: -75px;
   transform: translateY(-50%);
   writing-mode: vertical-lr;
   white-space: nowrap;

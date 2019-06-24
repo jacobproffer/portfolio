@@ -24,6 +24,14 @@ const GlobalStyle = createGlobalStyle`
     background: var(--red); 
   }
 
+  * {
+    &:focus {
+      border-color: var(--red);
+      outline: none;
+      box-shadow: inset 0 1px 2px var(--red), 0 0 0 .2em var(--red);
+    }
+  }
+
   html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -47,11 +55,6 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: #fff;
     text-decoration: none;
-    transition: color 300ms ease-in-out;
-
-    &:hover {
-      color: #000;
-    }
   }
 
   img {
@@ -63,12 +66,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     margin: 0;
   }
 
   h1 {
     font-size: 1.5rem;
+    font-weight: 400;
   }
 
   h2 {
