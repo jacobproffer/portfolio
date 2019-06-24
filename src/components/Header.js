@@ -29,7 +29,7 @@ const Header = (props) => (
           <h1>ヤコブ</h1>
         </Grid.Item>
         <Grid.Item styles={gridItemStyles}>
-          <nav>
+          <nav arial-label="primary">
             <List>
               <NavLink href="https://jacobproffer.com">履歴書</NavLink>
             </List>

@@ -9,9 +9,9 @@ import image from './static/hero.jpg';
 function App() {
   return (
     <React.Fragment>
+      <GlobalStyles />
+      <Header />
       <main>
-        <GlobalStyles />
-        <Header />
         <Hero
           heading="ウェブ開発者"
           image={image}

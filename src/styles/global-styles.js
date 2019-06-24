@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
+    position: relative;
     margin: 0;
     color: var(--white);
     background: var(--black);
