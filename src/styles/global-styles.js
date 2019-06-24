@@ -74,6 +74,10 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-size: 1.5rem;
     font-weight: 400;
+
+    ${screen.below('768px', `
+      font-size: 1.25rem;
+    `)}
   }
 
   h2 {
@@ -83,7 +87,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 4.6875rem;
     `)}
 
-    ${screen.below('768px', `
+    ${screen.below('1024px', `
       font-size: 3.135rem;
     `)}
 
@@ -94,6 +98,10 @@ const GlobalStyle = createGlobalStyle`
 
   h3 {
     font-size: 3rem;
+
+    ${screen.below('1024px', `
+      font-size: 2.5rem;
+    `)}
 
     ${screen.below('768px', `
       font-size: 1.5rem;

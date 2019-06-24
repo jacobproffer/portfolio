@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import screen from 'superior-mq';
 import Container from './Container';
 import Grid from './Grid';
 import List from './List';
@@ -16,6 +17,14 @@ const SiteHeader = styled.header`
   z-index: 1;
   width: 100%;
   padding: 100px 0;
+
+  ${screen.below('1280px', `
+    padding: 75px 0;
+  `)}
+
+  ${screen.below('1024px', `
+    padding: 50px 0;
+  `)}
 `;
 
 const Header = (props) => (

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
+import screen from 'superior-mq';
 import PropTypes from 'prop-types';
 
 const StyledLink = styled.a`
   position: relative;
   font-size: 1.5rem;
-  // font-weight: 900;
   text-transform: uppercase;
 
   &::before {
@@ -24,6 +24,10 @@ const StyledLink = styled.a`
       background-color: var(--green);
     }
   }
+
+  ${screen.below('1024px', `
+    font-size: 1rem;
+  `)}
 
   ${props => props.styles && css`
     ${props.styles}

@@ -1,11 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import screen from 'superior-mq';
 import PropTypes from 'prop-types';
 import Container from '../Container';
 import Grid from '../Grid';
 
 const HeroBlock = styled.div`
   padding: 100px 0 182px;
+
+  ${screen.below('1280px', `
+    padding: 75px 0 136px;
+  `)}
+
+  ${screen.below('1024px', `
+    padding: 50px 0 91px;
+  `)}
 `;
 
 const Image = styled(Grid.Item)`
@@ -44,6 +53,14 @@ const Heading = styled.h2`
   transform: translateY(-50%);
   writing-mode: vertical-lr;
   white-space: nowrap;
+
+  ${screen.below('1280px', `
+    right: -57px;
+  `)}
+
+  ${screen.below('1024px', `
+    right: -38px;
+  `)}
 `;
 
 const Hero = (props) => (
