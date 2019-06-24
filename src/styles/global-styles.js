@@ -11,6 +11,14 @@ const GlobalStyle = createGlobalStyle`
     --black: #010101;
     --green: #00b378;
     --red: #ff572b;
+
+    ${screen.below('1440px', `
+      --container: 1220px;
+    `)}
+
+    ${screen.below('1280px', `
+      --container: 1080px;
+    `)}
   }
 
   *,
@@ -18,9 +26,11 @@ const GlobalStyle = createGlobalStyle`
   *::before {
     box-sizing: border-box;
   }
-
-  ::-moz-selection { background: rgba(0, 0, 0, .9); }
-  ::selection { background: rgba(0, 0, 0, .9); }
+  
+  ::selection {
+    color: var(--white);
+    background: var(--red); 
+  }
 
   html {
     line-height: 1.15;
@@ -35,6 +45,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 1.5;
     border: 0;
+  }
+
+  main {
+    position: relative;
   }
   
   a {
@@ -55,9 +69,17 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
+  h1,
+  h2 {
+    margin: 0;
+  }
+
   h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
     font-size: 1.5625rem;
-    text-transform: uppercase;
 
     ${screen.above('768px', `
       font-size: 3.125rem;

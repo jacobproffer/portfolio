@@ -29,11 +29,10 @@ const Image = styled.div`
   }
 `;
 
-const Heading = styled.h1`
+const Heading = styled.h2`
   position: absolute;
   top: 50%;
   right: -56px;
-  margin: 0;
   transform: translateY(-50%);
   writing-mode: vertical-lr;
   white-space: nowrap;
