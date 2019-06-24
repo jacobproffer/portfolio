@@ -5,8 +5,9 @@ import Grid from './Grid';
 import List from './List';
 
 const gridItemStyles = `
-  grid-column: span 1 / -1;
+  grid-column: span 2 / -1;
   align-self: end;
+  text-align: right;
 `;
 
 const SiteHeader = styled.header`
@@ -24,7 +25,7 @@ const Header = (props) => (
   <SiteHeader>
     <Container>
       <Grid>
-        <Grid.Item>
+        <Grid.Item span={2}>
           <h1>ヤコブ</h1>
         </Grid.Item>
         <Grid.Item styles={gridItemStyles}>

@@ -1,8 +1,13 @@
 import styled from 'styled-components';
+import screen from 'superior-mq';
 
 const Container = styled.div`
-  width: var(--container);
+  max-width: var(--container);
   margin: auto;
+
+  ${screen.below('1280px', `
+    padding: 0 40px;
+  `)}
 `;
 
 export default Container;

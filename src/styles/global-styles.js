@@ -11,14 +11,6 @@ const GlobalStyle = createGlobalStyle`
     --black: #010101;
     --green: #00b378;
     --red: #ff572b;
-
-    ${screen.below('1440px', `
-      --container: 1220px;
-    `)}
-
-    ${screen.below('1280px', `
-      --container: 1080px;
-    `)}
   }
 
   *,
@@ -81,11 +73,11 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 1.5625rem;
 
-    ${screen.above('768px', `
+    ${screen.above('375px', `
       font-size: 3.125rem;
     `)}
 
-    ${screen.above('1024px', `
+    ${screen.above('768px', `
       font-size: 4.6875rem;
     `)}
 

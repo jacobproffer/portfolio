@@ -2,20 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Container from '../Container';
+import Grid from '../Grid';
 
 const HeroSection = styled.section`
   padding: 50px 0 200px;
 `;
 
-const Image = styled.div`
+const Image = styled(Grid.Item)`
   position: relative;
-  max-width: 470px;
-  margin: 0 auto;
   background-color: var(--red);
-  
-  img {
-    mix-blend-mode: soft-light;
-  }
+  grid-column: 4 / span 4;
 
   &::before {
     position: absolute;
@@ -26,6 +22,18 @@ const Image = styled.div`
     height: 100%;
     background-color: var(--green);
     content: '';
+  }
+`;
+
+const Figure = styled.figure`
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: soft-light;
   }
 `;
 
@@ -41,12 +49,14 @@ const Heading = styled.h2`
 const Hero = (props) => (
   <HeroSection>
     <Container>
-      <figure>
+      <Grid>
         <Image>
-          <img src={props.image} alt={props.imageAlt} />
+          <Figure>
+            <img src={props.image} alt={props.imageAlt} />
+          </Figure>
           <Heading>{props.heading}</Heading>
         </Image>
-      </figure>
+      </Grid>
     </Container>
   </HeroSection>
 );
