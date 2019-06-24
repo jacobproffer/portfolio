@@ -17,7 +17,9 @@ const Intro = (props) => (
     <Container>
       <Grid>
         <Grid.Item span={3}>
-          <h3>{props.heading}</h3>
+          <header>
+            <h3>{props.heading}</h3>
+          </header>
         </Grid.Item>
         <Grid.Item styles={gridItemStyles}>
           {props.children}

@@ -71,18 +71,26 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: 1.5625rem;
+    font-size: 6.25rem;
 
-    ${screen.above('375px', `
-      font-size: 3.125rem;
-    `)}
-
-    ${screen.above('768px', `
+    ${screen.below('1280px', `
       font-size: 4.6875rem;
     `)}
 
-    ${screen.above('1280px', `
-      font-size: 6.25rem;
+    ${screen.below('768px', `
+      font-size: 3.135rem;
+    `)}
+
+    ${screen.below('480px', `
+      font-size: 1.5625rem;
+    `)}
+  }
+
+  h3 {
+    font-size: 3rem;
+
+    ${screen.below('768px', `
+      font-size: 1.5rem;
     `)}
   }
 

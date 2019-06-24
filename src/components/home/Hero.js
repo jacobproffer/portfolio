@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Container from '../Container';
 import Grid from '../Grid';
 
-const HeroSection = styled.section`
+const HeroBlock = styled.div`
   padding: 50px 0 200px;
 `;
 
@@ -47,7 +47,7 @@ const Heading = styled.h2`
 `;
 
 const Hero = (props) => (
-  <HeroSection>
+  <HeroBlock>
     <Container>
       <Grid>
         <Image>
@@ -58,7 +58,7 @@ const Hero = (props) => (
         </Image>
       </Grid>
     </Container>
-  </HeroSection>
+  </HeroBlock>
 );
 
 Hero.propTypes = {
