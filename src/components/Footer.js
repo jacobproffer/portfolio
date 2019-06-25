@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import screen from 'superior-mq';
 import Container from './Container';
 import Grid from './Grid';
 import List from './List';
@@ -25,7 +26,15 @@ const gridItemStyles = `
 `;
 
 const StyledFooter = styled.footer`
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+
+  ${screen.below('1280px', `
+    padding-bottom: 75px;
+  `)}
+
+  ${screen.below('1024px', `
+    padding-bottom: 50px;
+  `)}
 `;
 
 const ListItem = styled.li`
