@@ -2,9 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import screen from 'superior-mq';
 
 const GlobalStyle = createGlobalStyle`
-
-  @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,900&display=swap');
-
   :root {
     --container: 1220px;
     --white: #fff;
