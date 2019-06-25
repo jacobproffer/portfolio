@@ -63,7 +63,7 @@ const Footer = (props) => (
           </nav>
         </Grid.Item>
         <Grid.Item styles={gridItemStyles}>
-          <Link link="https://github.com">Repository</Link>
+          <Link link="https://github.com/jacobproffer/portfolio">Repository</Link>
         </Grid.Item>
       </Grid>
     </Container>

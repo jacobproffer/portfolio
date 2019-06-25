@@ -37,7 +37,7 @@ const Header = (props) => (
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">
             <List>
-              <Link link="https://jacobproffer.com">履歴書</Link>
+              <Link link="https://jacobproffer.com">ブログ</Link>
             </List>
           </nav>
         </Grid.Item>
