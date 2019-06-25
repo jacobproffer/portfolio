@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     color: var(--white);
     background: var(--black);
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     border: 0;
