@@ -31,7 +31,7 @@ const StyledFooter = styled.footer`
   `)}
 
   ${screen.below('768px', `
-    padding-bottom: 25px;
+    padding-top: 14px;
   `)}
 `;
 

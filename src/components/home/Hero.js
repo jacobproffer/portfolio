@@ -15,6 +15,10 @@ const HeroBlock = styled.div`
   ${screen.below('1024px', `
     padding: 50px 0 91px;
   `)}
+
+  ${screen.below('768px', `
+    padding: 50px 0 65px;
+  `)}
 `;
 
 const Image = styled(Grid.Item)`
@@ -32,6 +36,10 @@ const Image = styled(Grid.Item)`
     background-color: var(--green);
     content: '';
   }
+
+  ${screen.below('768px', `
+    grid-column: 3 / span 6;
+  `)}
 `;
 
 const Figure = styled.figure`
@@ -60,6 +68,10 @@ const Heading = styled.h2`
 
   ${screen.below('1024px', `
     right: -38px;
+  `)}
+
+  ${screen.below('480px', `
+    right: -19px;
   `)}
 `;
 
