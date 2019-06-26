@@ -63,9 +63,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1,
-  h2,
-  h3 {
+  h2 {
     margin: 0;
+  }
+
+  h3 {
+    margin-top: 0;
   }
 
   h1 {

@@ -4,6 +4,10 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-column-gap: 20px;
+
+  ${props => props.styles && css`
+    ${props.styles}
+  `}
 `;
 
 Grid.Item = styled.div`
