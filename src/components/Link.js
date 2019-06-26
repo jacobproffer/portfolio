@@ -1,9 +1,7 @@
-import React from 'react';
 import styled, {css} from 'styled-components';
 import screen from 'superior-mq';
-import PropTypes from 'prop-types';
 
-const StyledLink = styled.a`
+const Link = styled.a`
   position: relative;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -29,20 +27,13 @@ const StyledLink = styled.a`
     font-size: 1rem;
   `)}
 
+  ${screen.below('768px', `
+    font-size: .9rem;
+  `)}
+
   ${props => props.styles && css`
     ${props.styles}
   `}
 `;
-
-const Link = (props) => (
-  <StyledLink href={props.link} target="_blank" rel="noreferrer noopener">
-    {props.children}
-  </StyledLink>
-);
-
-Link.propTypes = {
-  link: PropTypes.string,
-  children: PropTypes.node,
-};
 
 export default Link;

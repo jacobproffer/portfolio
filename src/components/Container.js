@@ -8,6 +8,10 @@ const Container = styled.div`
   ${screen.below('1280px', `
     padding: 0 40px;
   `)}
+
+  ${screen.below('1024px', `
+    padding: 0 20px;
+  `)}
 `;
 
 export default Container;

@@ -25,6 +25,10 @@ const SiteHeader = styled.header`
   ${screen.below('1024px', `
     padding: 50px 0;
   `)}
+
+  ${screen.below('768px', `
+    padding: 25px 0;
+  `)}
 `;
 
 const Header = (props) => (
@@ -37,7 +41,7 @@ const Header = (props) => (
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">
             <List>
-              <Link link="https://jacobproffer.com">ブログ</Link>
+              <Link href="https://jacobproffer.com" target="_blank" rel="noreferrer noopener">ブログ</Link>
             </List>
           </nav>
         </Grid.Item>
