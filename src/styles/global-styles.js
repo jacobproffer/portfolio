@@ -63,12 +63,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1,
-  h2 {
-    margin: 0;
-  }
-
+  h2,
   h3 {
-    margin-top: 0;
+    margin: 0;
   }
 
   h1 {
@@ -77,6 +74,7 @@ const GlobalStyle = createGlobalStyle`
 
     ${screen.below('768px', `
       font-size: 1.25rem;
+      writing-mode: vertical-lr;
     `)}
   }
 

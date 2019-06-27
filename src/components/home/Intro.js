@@ -6,6 +6,12 @@ import Section from '../Section';
 import Container from '../Container';
 import Grid from '../Grid';
 
+const gridStyles = `
+  ${screen.below('768px', `
+    grid-row-gap: 20px;
+  `)}
+`;
+
 const IntroSection = styled(Section)`
   p {
     margin: 0;
@@ -37,7 +43,7 @@ const IntroContent = styled(Grid.Item)`
 const Intro = (props) => (
   <IntroSection>
     <Container>
-      <Grid>
+      <Grid styles={gridStyles}>
         <IntroHeader>
           <header>
             <h3>{props.heading}</h3>

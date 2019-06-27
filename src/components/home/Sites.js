@@ -15,15 +15,13 @@ const siteList = [
   },
   {
     id: 2,
-    title: 'defendtheoutpost.com',
-    link: 'https://defendtheoutpost.com',
-    tag: 'React',
-  },
+    title: 'raconteuranimation.com',
+    link: 'http://raconteuranimation.com/',
+    tag: 'WordPress'
+  }
 ];
 
 const gridStyles = `
-  grid-row-gap: 60px;
-
   ${screen.below('768px', `
     grid-row-gap: 30px;
   `)}
@@ -59,6 +57,11 @@ const Sites = (props) => (
   <Section>
     <Container>
       <Grid styles={gridStyles}>
+        <Grid.Item span={3}>
+          <header>
+            <h3>作品</h3>
+          </header>
+        </Grid.Item>
         {siteList.map(item => (
           <Grid.Item key={item.id} styles={gridItemStyles}>
             <SiteLink href={item.link} target="_blank" rel="noreferrer noopener">
