@@ -62,23 +62,21 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
+  ruby {
+    rt {
+      margin-bottom: 5px;
+      color: var(--green);
+      font-size: 1rem;
+      ruby-align: center;
+    }
+  }
+
   h1,
-  h2,
-  h3 {
+  h2 {
     margin: 0;
   }
 
   h1 {
-    font-size: 1.5rem;
-    font-weight: 400;
-
-    ${screen.below('768px', `
-      font-size: 1.25rem;
-      writing-mode: vertical-lr;
-    `)}
-  }
-
-  h2 {
     font-size: 6.25rem;
 
     ${screen.below('1280px', `
@@ -94,7 +92,7 @@ const GlobalStyle = createGlobalStyle`
     `)}
   }
 
-  h3 {
+  h2 {
     font-size: 3rem;
 
     ${screen.below('1024px', `

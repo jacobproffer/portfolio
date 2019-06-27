@@ -55,7 +55,7 @@ const Header = (props) => (
       <SkipLink href="#content">本文へスキップ</SkipLink>
       <Grid>
         <Grid.Item span={2}>
-          <h1>ヤコブ</h1>
+          <span>ヤコブ</span>
         </Grid.Item>
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">

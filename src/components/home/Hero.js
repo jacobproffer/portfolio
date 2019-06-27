@@ -51,7 +51,7 @@ const Figure = styled.figure`
   }
 `;
 
-const Heading = styled.h2`
+const Heading = styled.h1`
   position: absolute;
   top: 50%;
   right: -75px;
@@ -80,7 +80,7 @@ const Hero = (props) => (
           <Figure>
             <img src={props.image} alt={props.imageAlt} />
           </Figure>
-          <Heading>{props.heading}</Heading>
+          <Heading>ウェブ開発者</Heading>
         </Image>
       </Grid>
     </Container>
@@ -88,7 +88,6 @@ const Hero = (props) => (
 );
 
 Hero.propTypes = {
-  heading: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   imageAlt: PropTypes.string.isRequired,
 };
