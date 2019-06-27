@@ -59,7 +59,12 @@ const Sites = (props) => (
       <Grid styles={gridStyles}>
         <Grid.Item span={3}>
           <header>
-            <h3>作品</h3>
+            <h2>
+              <ruby>
+                作<rt>さく</rt>
+                品<rt>ひん</rt>
+              </ruby>
+            </h2>
           </header>
         </Grid.Item>
         {siteList.map(item => (

@@ -46,7 +46,7 @@ const Intro = (props) => (
       <Grid styles={gridStyles}>
         <IntroHeader>
           <header>
-            <h3>{props.heading}</h3>
+            <h2>{props.heading}</h2>
           </header>
         </IntroHeader>
         <IntroContent>
