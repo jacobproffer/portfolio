@@ -17,7 +17,7 @@ const HeroBlock = styled.div`
   `)}
 
   ${screen.below('768px', `
-    padding: 50px 0 65px;
+    padding: 25px 0 65px;
   `)}
 `;
 
@@ -47,9 +47,6 @@ const Figure = styled.figure`
   width: 100%;
 
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     mix-blend-mode: soft-light;
   }
 `;
