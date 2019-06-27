@@ -15,9 +15,9 @@ function App() {
       <Hero
         heading="ウェブ開発者"
         image={image}
-        imageAlt="Jacob Proffer."
+        imageAlt="Portrait of Jacob Proffer."
       />
-      <main>
+      <main id="content">
         <Intro
           heading="インフォ"
         >

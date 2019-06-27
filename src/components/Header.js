@@ -37,9 +37,22 @@ const HeaderLink = styled(Link)`
   `)}
 `;
 
+const SkipLink = styled.a`
+  position: fixed;
+  top: -2.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top .5s ease-in-out;
+
+  &:focus {
+    top: 0;
+  }
+`;
+
 const Header = (props) => (
   <SiteHeader>
     <Container>
+      <SkipLink href="#content">本文へスキップ</SkipLink>
       <Grid>
         <Grid.Item span={2}>
           <h1>ヤコブ</h1>
