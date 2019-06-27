@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import screen from 'superior-mq';
+import PropTypes from 'prop-types';
 import Section from '../Section';
 import Container from '../Container';
 import Grid from '../Grid';
@@ -59,12 +60,7 @@ const Sites = (props) => (
       <Grid styles={gridStyles}>
         <Grid.Item span={3}>
           <header>
-            <h2>
-              <ruby>
-                作<rt>さく</rt>
-                品<rt>ひん</rt>
-              </ruby>
-            </h2>
+            <h2>{props.heading}</h2>
           </header>
         </Grid.Item>
         {siteList.map(item => (
@@ -79,5 +75,9 @@ const Sites = (props) => (
     </Container>
   </Section>
 );
+
+Sites.propTypes = {
+  heading: PropTypes.string.isRequired,
+};
 
 export default Sites;
