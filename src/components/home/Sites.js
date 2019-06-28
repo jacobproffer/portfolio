@@ -46,6 +46,10 @@ const SiteTag = styled.span`
   ${screen.below('768px', `
     font-size: .75rem;
   `)}
+
+  ${screen.below('375px', `
+    display: none;
+  `)}
 `;
 
 const Sites = (props) => (
