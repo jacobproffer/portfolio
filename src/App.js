@@ -13,6 +13,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <Hero
+        heading="ウェブ開発者"
         image={image}
         imageAlt="Portrait of Jacob Proffer."
       />
