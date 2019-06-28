@@ -15,7 +15,7 @@ const gridStyles = `
 const IntroSection = styled(Section)`
   p {
     margin: 0;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 32px;
 
     ${screen.below('768px', `
