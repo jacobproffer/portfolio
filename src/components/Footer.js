@@ -83,7 +83,7 @@ const Footer = (props) => (
           </nav>
         </SocialLinks>
         <RepoLink>
-          <Link href="https://github.com/jacobproffer/portfolio" target="_blank" rel="noreferrer noopener">Repository</Link>
+          <Link href="https://github.com/jacobproffer/portfolio" target="_blank" rel="noreferrer noopener">リポジトリ</Link>
         </RepoLink>
       </Grid>
     </Container>

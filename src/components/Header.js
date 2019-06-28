@@ -5,6 +5,7 @@ import Container from './Container';
 import Grid from './Grid';
 import List from './List';
 import Link from './Link';
+import { ReactComponent as Logo } from './svg/logo.svg';
 
 const gridItemStyles = `
   grid-column: span 2 / -1;
@@ -49,13 +50,30 @@ const SkipLink = styled.a`
   }
 `;
 
+const LogoWrap = styled.div`
+  width: 40px;
+  height: 40px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  ${screen.below('768px', `
+    width: 30px;
+    height: 30px;
+  `)}
+`;
+
 const Header = (props) => (
   <SiteHeader>
     <Container>
       <SkipLink href="#content">本文へスキップ</SkipLink>
       <Grid>
         <Grid.Item span={2}>
-          <span>ヤコブ</span>
+          <LogoWrap>
+            <Logo />
+          </LogoWrap>
         </Grid.Item>
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">
