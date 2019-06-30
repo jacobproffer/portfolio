@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import screen from 'superior-mq';
 
 const Container = styled.div`
+  position: relative;
   max-width: var(--container);
   margin: auto;
 

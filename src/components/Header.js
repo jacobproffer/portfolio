@@ -59,14 +59,13 @@ const LogoWrap = styled.div`
   `)}
 `;
 
-const ContactText = styled.p`
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-
+const ContactLink = styled(Link)`
   ${screen.below('768px', `
+    position: absolute;
+    top: 0;
+    right: 20px;
     writing-mode: vertical-lr;
+    white-space: nowrap;
   `)}
 `;
 
@@ -83,9 +82,7 @@ const Header = (props) => (
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">
             <List>
-              <Link href="mailto:hello@jacobproffer.com">
-                <ContactText>コンタクト</ContactText>
-              </Link>
+              <ContactLink href="mailto:hello@jacobproffer.com">コンタクト</ContactLink>
             </List>
           </nav>
         </Grid.Item>
