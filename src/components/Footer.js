@@ -39,7 +39,7 @@ const SocialLinks = styled(Grid.Item)`
   grid-column: span 3;
 
   ${screen.below('768px', `
-    grid-column: span 8;
+    grid-column: span 9;
   `)}
 `;
 
