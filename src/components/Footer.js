@@ -22,7 +22,7 @@ const footerList = [
 const StyledFooter = styled.footer`
   padding-bottom: 100px;
 
-  ${screen.below('1280px', `
+  ${screen.below('1281px', `
     padding-bottom: 75px;
   `)}
 
@@ -39,7 +39,7 @@ const SocialLinks = styled(Grid.Item)`
   grid-column: span 3;
 
   ${screen.below('768px', `
-    grid-column: span 8;
+    grid-column: span 9;
   `)}
 `;
 

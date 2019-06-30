@@ -8,7 +8,7 @@ import Grid from '../Grid';
 const HeroBlock = styled.div`
   padding: 100px 0 182px;
 
-  ${screen.below('1280px', `
+  ${screen.below('1281px', `
     padding: 75px 0 136px;
   `)}
 
@@ -59,7 +59,7 @@ const Heading = styled.h1`
   writing-mode: vertical-lr;
   white-space: nowrap;
 
-  ${screen.below('1280px', `
+  ${screen.below('1281px', `
     right: -57px;
   `)}
 
