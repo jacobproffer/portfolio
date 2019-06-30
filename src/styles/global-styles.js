@@ -79,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-size: 6.25rem;
 
-    ${screen.below('1280px', `
+    ${screen.below('1281px', `
       font-size: 4.6875rem;
     `)}
 

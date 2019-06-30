@@ -5,7 +5,7 @@ const Container = styled.div`
   max-width: var(--container);
   margin: auto;
 
-  ${screen.below('1280px', `
+  ${screen.below('1281px', `
     padding: 0 40px;
   `)}
 

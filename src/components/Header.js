@@ -19,7 +19,7 @@ const SiteHeader = styled.header`
   width: 100%;
   padding: 100px 0;
 
-  ${screen.below('1280px', `
+  ${screen.below('1281px', `
     padding: 75px 0;
   `)}
 

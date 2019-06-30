@@ -4,7 +4,7 @@ import screen from 'superior-mq';
 const Section = styled.section`
   padding-bottom: 168px;
 
-  ${screen.below('1280px', `
+  ${screen.below('1281px', `
     padding-bottom: 126px;
   `)}
 

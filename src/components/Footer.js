@@ -22,7 +22,7 @@ const footerList = [
 const StyledFooter = styled.footer`
   padding-bottom: 100px;
 
-  ${screen.below('1280px', `
+  ${screen.below('1281px', `
     padding-bottom: 75px;
   `)}
 
