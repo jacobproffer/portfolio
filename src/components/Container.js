@@ -10,7 +10,7 @@ const Container = styled.div`
   `)}
 
   ${screen.below('1024px', `
-    padding: 0 20px;
+    padding: 0 25px;
   `)}
 `;
 
