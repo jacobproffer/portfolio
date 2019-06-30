@@ -32,12 +32,6 @@ const SiteHeader = styled.header`
   `)}
 `;
 
-const HeaderLink = styled(Link)`
-  ${screen.below('768px', `
-    writing-mode: vertical-lr;
-  `)}
-`;
-
 const SkipLink = styled.a`
   position: fixed;
   top: -2.5em;
@@ -65,6 +59,16 @@ const LogoWrap = styled.div`
   `)}
 `;
 
+const ContactLink = styled(Link)`
+  ${screen.below('768px', `
+    position: absolute;
+    top: 0;
+    right: 20px;
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+  `)}
+`;
+
 const Header = (props) => (
   <SiteHeader>
     <Container>
@@ -78,7 +82,7 @@ const Header = (props) => (
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">
             <List>
-              <HeaderLink href="mailto:hello@jacobproffer.com">コンタクト</HeaderLink>
+              <ContactLink href="mailto:hello@jacobproffer.com">コンタクト</ContactLink>
             </List>
           </nav>
         </Grid.Item>
