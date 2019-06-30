@@ -78,7 +78,7 @@ const Header = (props) => (
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">
             <List>
-              <HeaderLink href="https://jacobproffer.com" target="_blank" rel="noreferrer noopener">ブログ</HeaderLink>
+              <HeaderLink href="mailto:hello@jacobproffer.com">コンタクト</HeaderLink>
             </List>
           </nav>
         </Grid.Item>
