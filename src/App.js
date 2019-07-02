@@ -19,10 +19,8 @@ function App() {
           image={image}
           imageAlt="Portrait of Jacob Proffer."
         />
-        <main id="content">
-          <Intro
-            heading="インフォ"
-          >
+        <main id="main-content">
+          <Intro heading="インフォ">
             <p>私はアッパーミシガン州のウェブ開発者です。</p>
           </Intro>
           <Sites heading="作品" />
