@@ -23,6 +23,8 @@ const siteList = [
 ];
 
 const gridStyles = `
+  grid-row-gap: 60px;
+  
   ${screen.below('768px', `
     grid-row-gap: 30px;
   `)}

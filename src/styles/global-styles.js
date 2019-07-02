@@ -94,6 +94,7 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 3rem;
+    line-height: 1;
 
     ${screen.below('1024px', `
       font-size: 2.5rem;

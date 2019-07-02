@@ -1,5 +1,6 @@
 import React from 'react';
 import GlobalStyles from './styles/global-styles';
+import Wrap from './components/Wrap';
 import Header from './components/Header';
 import Hero from './components/home/Hero';
 import Intro from './components/home/Intro';
@@ -11,21 +12,23 @@ function App() {
   return (
     <React.Fragment>
       <GlobalStyles />
-      <Header />
-      <Hero
-        heading="ウェブ開発者"
-        image={image}
-        imageAlt="Portrait of Jacob Proffer."
-      />
-      <main id="content">
-        <Intro
-          heading="インフォ"
-        >
-          <p>私はアッパーミシガン州のウェブ開発者です。</p>
-        </Intro>
-        <Sites heading="作品" />
-      </main>
-      <Footer />
+      <Wrap>
+        <Header />
+        <Hero
+          heading="ウェブ開発者"
+          image={image}
+          imageAlt="Portrait of Jacob Proffer."
+        />
+        <main id="content">
+          <Intro
+            heading="インフォ"
+          >
+            <p>私はアッパーミシガン州のウェブ開発者です。</p>
+          </Intro>
+          <Sites heading="作品" />
+        </main>
+        <Footer />
+      </Wrap>
     </React.Fragment>
   );
 }
