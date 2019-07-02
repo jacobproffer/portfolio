@@ -9,7 +9,6 @@ import { ReactComponent as Logo } from './svg/logo.svg';
 
 const gridItemStyles = `
   grid-column: span 2 / -1;
-  align-self: end;
   text-align: right;
 `;
 
@@ -72,7 +71,7 @@ const ContactLink = styled(Link)`
 const Header = (props) => (
   <SiteHeader>
     <Container>
-      <SkipLink href="#content">本文へスキップ</SkipLink>
+      <SkipLink href="#main-content">本文へスキップ</SkipLink>
       <Grid>
         <Grid.Item span={2}>
           <LogoWrap>
