@@ -44,14 +44,21 @@ const Intro = (props) => (
   <IntroSection>
     <Container>
       <Grid styles={gridStyles}>
-        <IntroHeader>
-          <header>
-            <h2>{props.heading}</h2>
-          </header>
-        </IntroHeader>
-        <IntroContent>
-          {props.children}
-        </IntroContent>
+
+        {props.heading &&
+          <IntroHeader>
+            <header>
+              <h2>{props.heading}</h2>
+            </header>
+          </IntroHeader>
+        }
+
+        {props.children &&
+          <IntroContent>
+            {props.children}
+          </IntroContent>
+        }
+        
       </Grid>
     </Container>
   </IntroSection>

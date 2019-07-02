@@ -77,10 +77,17 @@ const Hero = (props) => (
     <Container>
       <Grid>
         <Image>
-          <Figure>
-            <img src={props.image} alt={props.imageAlt} />
-          </Figure>
-          <Heading>{props.heading}</Heading>
+
+          {props.image &&
+            <Figure>
+              <img src={props.image} alt={props.imageAlt} />
+            </Figure>
+          }
+
+          {props.heading &&
+            <Heading>{props.heading}</Heading>
+          }
+          
         </Image>
       </Grid>
     </Container>
@@ -90,7 +97,7 @@ const Hero = (props) => (
 Hero.propTypes = {
   heading: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  imageAlt: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string,
 };
 
 export default Hero;
