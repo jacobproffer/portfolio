@@ -64,11 +64,15 @@ const Sites = (props) => (
   <Section>
     <Container>
       <Grid styles={gridStyles}>
-        <Grid.Item span={3}>
-          <header>
-            <h2>{props.heading}</h2>
-          </header>
-        </Grid.Item>
+
+        {props.heading &&
+          <Grid.Item span={3}>
+            <header>
+              <h2>{props.heading}</h2>
+            </header>
+          </Grid.Item>
+        }
+        
         {siteList.map(item => (
           <Grid.Item key={item.id} styles={gridItemStyles}>
             <SiteLink href={item.link} target="_blank" rel="noreferrer noopener">
