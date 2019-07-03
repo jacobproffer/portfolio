@@ -62,15 +62,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
-  ruby {
-    rt {
-      margin-bottom: 5px;
-      color: var(--green);
-      font-size: 1rem;
-      ruby-align: center;
-    }
-  }
-
   h1,
   h2 {
     margin: 0;
