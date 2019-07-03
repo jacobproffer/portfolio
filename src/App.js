@@ -20,10 +20,10 @@ function App() {
           imageAlt="Portrait of Jacob Proffer."
         />
         <main id="main-content">
-          <Intro heading="凡そ">
+          <Intro heading="誰">
             <p>私の名前はヤコブです。アッパーミシガン州のウェブ開発者です。アクセシビリティと使いやすさとそしてパフォーマンスが大好きです。</p>
           </Intro>
-          <Sites heading="作品" />
+          <Sites heading="何" />
         </main>
         <Footer />
       </Wrap>
