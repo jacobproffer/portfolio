@@ -79,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
     `)}
 
     ${screen.below('480px', `
-      font-size: 1.5625rem;
+      font-size: 2rem;
     `)}
   }
 

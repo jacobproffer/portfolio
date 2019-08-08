@@ -20,10 +20,11 @@ function App() {
           imageAlt="Portrait of Jacob Proffer."
         />
         <main id="main-content">
-          <Intro heading="誰">
-            <p>私の名前はヤコブです。2014年にノーザンミシガン大学を卒業しました。現在Elegant Seagullsのフロントエンド開発者として働いています。私はアクセシビリティと使いやすさとそしてパフォーマンスに焦点を当てています。</p>
+          <Intro heading="Info">
+            <p>I am a Front-End Developer from Upper Michigan, currently working at Elegant Seagulls. I build speedy websites that are accessible and usable. For the past four years, I have focused on custom WordPress themes with Advanced Custom Fields. Most recently, I have grown a love for React and Hugo.</p>
+            <p>When I am not coding, I focus the majority of my time on learning Japanese and long distance trail running.</p>
           </Intro>
-          <Sites heading="何" />
+          <Sites heading="Sites" />
         </main>
         <Footer />
       </Wrap>
