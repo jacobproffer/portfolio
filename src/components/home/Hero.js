@@ -85,7 +85,7 @@ const Hero = (props) => (
           }
 
           {props.heading &&
-            <Heading>{props.heading}</Heading>
+            <Heading lang="ja">{props.heading}</Heading>
           }
           
         </Image>

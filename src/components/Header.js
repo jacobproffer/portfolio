@@ -81,7 +81,7 @@ const Header = (props) => (
         <Grid.Item styles={gridItemStyles}>
           <nav arial-label="primary">
             <List>
-              <ContactLink href="mailto:hello@jacobproffer.com">コンタクト</ContactLink>
+              <ContactLink href="mailto:hello@jacobproffer.com">Contact</ContactLink>
             </List>
           </nav>
         </Grid.Item>

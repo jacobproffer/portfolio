@@ -14,9 +14,16 @@ const gridStyles = `
 
 const IntroSection = styled(Section)`
   p {
-    margin: 0;
     font-size: 1.25rem;
     line-height: 32px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
     ${screen.below('768px', `
       font-size: 1rem;
