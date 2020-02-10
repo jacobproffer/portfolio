@@ -10,15 +10,15 @@ import Link from '../Link';
 const siteList = [
   {
     id: 1,
-    title: 'jacobproffer.com',
-    link: 'https://jacobproffer.com',
+    title: 'tickets.proffer.dev',
+    link: 'https://tickets.proffer.dev',
     tag: 'Hugo'
   },
   {
     id: 2,
-    title: 'raconteuranimation.com',
-    link: 'http://raconteuranimation.com/',
-    tag: 'WordPress'
+    title: 'jacobproffer.com',
+    link: 'https://jacobproffer.com',
+    tag: 'Hugo'
   }
 ];
 

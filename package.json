@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.0.1",
-    "styled-components": "^4.3.2",
-    "superior-mq": "^0.0.2"
+    "eslint-plugin-react": "^7.18.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.1",
+    "styled-components": "^5.0.1",
+    "superior-mq": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

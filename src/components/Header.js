@@ -79,9 +79,11 @@ const Header = (props) => (
           </LogoWrap>
         </Grid.Item>
         <Grid.Item styles={gridItemStyles}>
-          <nav arial-label="primary">
-            <List>
-              <ContactLink href="mailto:hello@jacobproffer.com">Contact</ContactLink>
+          <nav id="navigation" aria-label="primary-navigation">
+            <List aria-labelledby="navigation">
+              <li>
+                <ContactLink href="mailto:hello@jacobproffer.com">Contact</ContactLink>
+              </li>
             </List>
           </nav>
         </Grid.Item>
