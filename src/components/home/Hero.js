@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Container from '../Container';
 import Grid from '../Grid';
 
-const HeroBlock = styled.div`
+const HeroBlock = styled.section`
   padding: 100px 0 182px;
 
   ${screen.below('1281px', `
@@ -42,7 +42,7 @@ const Image = styled(Grid.Item)`
   `)}
 `;
 
-const Figure = styled.figure`
+const Figure = styled.div`
   position: relative;
   width: 100%;
 
@@ -51,7 +51,7 @@ const Figure = styled.figure`
   }
 `;
 
-const Heading = styled.h1`
+const Heading = styled.header`
   position: absolute;
   top: 50%;
   right: -75px;
@@ -85,7 +85,9 @@ const Hero = (props) => (
           }
 
           {props.heading &&
-            <Heading lang="ja">{props.heading}</Heading>
+            <Heading lang="ja">
+              <h1>{props.heading}</h1>
+            </Heading>
           }
           
         </Image>
